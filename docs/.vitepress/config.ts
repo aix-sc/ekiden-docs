@@ -15,21 +15,14 @@ export default defineConfig({
       lang: 'ja',
       themeConfig: {
         nav: [
-          { text: 'はじめに', link: '/' },
-          { text: 'MCP', link: '/mcp' },
-          { text: 'CLI', link: '/cli' },
+          { text: 'はじめに', link: '/#start' },
+          { text: 'MCP', link: '/#mcp' },
+          { text: 'CLI', link: '/#cli' },
           { text: 'v3.ekiden.ai', link: 'https://v3.ekiden.ai/' },
         ],
-        sidebar: [
-          { text: 'ガイド', items: [
-            { text: 'はじめに', link: '/' },
-            { text: 'MCP（Claude Desktop）', link: '/mcp' },
-            { text: 'ツール一覧', link: '/tools' },
-            { text: 'CLI', link: '/cli' },
-            { text: 'トレーニング図鑑', link: '/catalog' },
-            { text: 'データの扱い', link: '/privacy' },
-          ] },
-        ],
+        outline: { level: [2, 3], label: 'このページの内容' },
+        lastUpdated: { text: '最終更新' },
+        docFooter: { prev: false, next: false },
       },
     },
     en: {
@@ -41,7 +34,7 @@ export default defineConfig({
           { text: 'Start', link: '/en/' },
           { text: 'v3.ekiden.ai', link: 'https://v3.ekiden.ai/' },
         ],
-        sidebar: [{ text: 'Guide', items: [{ text: 'Start', link: '/en/' }] }],
+        docFooter: { prev: false, next: false },
       },
     },
   },
