@@ -7,6 +7,26 @@ export default defineConfig({
   appearance: 'dark',
   lastUpdated: true,
   head: [
+    // Search engines: the two pages are the same guide in two languages.
+    ['link', { rel: 'alternate', hreflang: 'ja', href: 'https://docs.ekiden.ai/' }],
+    ['link', { rel: 'alternate', hreflang: 'en', href: 'https://docs.ekiden.ai/en/' }],
+    ['link', { rel: 'alternate', hreflang: 'x-default', href: 'https://docs.ekiden.ai/' }],
+    // First visit to "/": send browsers with no Japanese among their languages to "/en/".
+    // A language chosen with the menu is remembered (see theme/index.ts). Crawlers are not redirected.
+    ['script', {}, `(function () {
+  try {
+    var p = location.pathname;
+    if (p !== '/' && p !== '/index.html') return;
+    if (/bot|crawl|spider|slurp|preview/i.test(navigator.userAgent)) return;
+    var saved = null;
+    try { saved = localStorage.getItem('ekiden-docs-lang'); } catch (e) {}
+    if (saved === 'ja') return;
+    var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ''];
+    var ja = false;
+    for (var i = 0; i < langs.length; i++) if (/^ja(-|_|$)/i.test(langs[i])) ja = true;
+    if (saved === 'en' || !ja) location.replace('/en/' + location.search + location.hash);
+  } catch (e) {}
+})();`],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap' }],
   ],
