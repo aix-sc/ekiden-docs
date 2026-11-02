@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'EKIDEN.AI Docs',
   description: 'EKIDEN.AI v3 — workout interpretation, MCP and CLI',
   cleanUrls: true,
+  appearance: 'dark',
   lastUpdated: true,
   head: [
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
