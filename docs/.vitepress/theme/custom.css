@@ -1,0 +1,30 @@
+/* Same look as v3.ekiden.ai: white paper, near-black ink, blue labels, pink on dark, square corners. */
+:root {
+  --vp-font-family-base: 'Inter Tight', 'Noto Sans JP', system-ui, sans-serif;
+  --vp-font-family-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --vp-c-bg: #fefefe;
+  --vp-c-bg-alt: #f2f2f2;
+  --vp-c-text-1: #1e1e1e;
+  --vp-c-text-2: #4d4d4d;
+  --vp-c-brand-1: #0000ee;
+  --vp-c-brand-2: #2a2aff;
+  --vp-c-brand-3: #0000ee;
+  --vp-c-divider: #d6d6d6;
+  --vp-code-color: #0000ee;
+  --vp-button-brand-bg: #1e1e1e;
+  --vp-button-brand-hover-bg: #000000;
+  --vp-border-radius: 0;
+}
+.dark {
+  --vp-c-bg: #141414;
+  --vp-c-bg-alt: #1e1e1e;
+  --vp-c-text-1: #f2f2f2;
+  --vp-c-text-2: #b0b0b0;
+  --vp-c-brand-1: #9ab0ff;
+  --vp-c-brand-2: #b3c3ff;
+  --vp-c-brand-3: #9ab0ff;
+  --vp-c-divider: #333333;
+  --vp-code-color: #f386a1;
+}
+.vp-doc h1, .vp-doc h2 { font-weight: 500; }
+.vp-doc div[class*='language-'], .custom-block, .VPButton { border-radius: 0 !important; }
