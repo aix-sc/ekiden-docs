@@ -31,9 +31,12 @@ export default defineConfig({
       link: '/en/',
       themeConfig: {
         nav: [
-          { text: 'Start', link: '/en/' },
+          { text: 'Start', link: '/en/#start' },
+          { text: 'MCP', link: '/en/#mcp' },
+          { text: 'CLI', link: '/en/#cli' },
           { text: 'v3.ekiden.ai', link: 'https://v3.ekiden.ai/' },
         ],
+        outline: { level: [2, 3] },
         docFooter: { prev: false, next: false },
       },
     },
