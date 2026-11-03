@@ -82,7 +82,7 @@ After the public release, the CLI will be published on npm (so that it can be ru
 
 ## Training Catalog {#catalog}
 
-Sessions are identified using the Training Catalog by **Arata Fujiwara**. Arata built it from his own experience and what he learned from books and other sources; it is his work.
+Sessions are identified using the Training Catalog by **Arata Fujiwara**. Arata built it from his own experience and what he learned from books and other sources.
 
 | | Count |
 | --- | --- |

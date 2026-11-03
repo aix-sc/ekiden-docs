@@ -44,6 +44,7 @@ export default defineConfig({
         outline: { level: [2, 3], label: 'このページの内容' },
         lastUpdated: { text: '最終更新' },
         docFooter: { prev: false, next: false },
+        footer: { message: 'EKIDEN.AI v3 — AIx<i>{ }</i> プロジェクト（高橋雄介の個人事業）による研究プロジェクト' },
       },
     },
     en: {
@@ -59,10 +60,8 @@ export default defineConfig({
         ],
         outline: { level: [2, 3] },
         docFooter: { prev: false, next: false },
+        footer: { message: 'EKIDEN.AI v3 — a research project by AIx<i>{ }</i>, a sole proprietorship of Yusuke Takahashi' },
       },
     },
-  },
-  themeConfig: {
-    footer: { message: 'EKIDEN.AI v3 — a project of AIx<i>{ }</i>' },
   },
 });
