@@ -7,6 +7,8 @@ export default defineConfig({
   appearance: 'dark',
   lastUpdated: true,
   head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
+    ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
     // Search engines: the two pages are the same guide in two languages.
     ['link', { rel: 'alternate', hreflang: 'ja', href: 'https://docs.ekiden.ai/' }],
     ['link', { rel: 'alternate', hreflang: 'en', href: 'https://docs.ekiden.ai/en/' }],
