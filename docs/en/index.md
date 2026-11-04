@@ -6,11 +6,13 @@ outline: [2, 3]
 
 ## Start {#start}
 
-EKIDEN.AI v3 is an analysis layer that reads the FIT file from your watch and works out what the workout actually was: 800 m × 10, where you slowed down, whether you got faster than last time. It returns numbers and judgments; the AI you connect (Claude or ChatGPT) puts them into words.
+EKIDEN.AI v3 lets you reach your EKIDEN.AI training data and analysis from the tools you already use: Claude and other AI assistants, or the command line. No app to open; just ask “How did last week’s key workout go?” Read-only, and only your own data comes back. ChatGPT support is coming soon.
 
-- **Rules count**: reps, distances, times and paces. The same record always gives the same answer.
+The answers are built with this division of work:
+
+- **Rules evaluate**: what the watch recorded is evaluated by rules, down to reps, distance, time and pace. The same record always gives the same answer.
 - **Jev judges**: whether the run was planned and what it aimed at, chosen from fixed options with a probability.
-- **The athlete decides the rest**: only what only they can know, asked as a multiple-choice question.
+- **If unsure, the athlete confirms**: only what the athlete alone can know, asked as a multiple choice with the evidence shown.
 
 ### Two ways to use it {#usage}
 
