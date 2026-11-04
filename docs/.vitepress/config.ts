@@ -37,6 +37,7 @@ export default defineConfig({
       label: '日本語',
       lang: 'ja',
       themeConfig: {
+        logo: '/favicon.svg',
         nav: [
           { text: 'はじめに', link: '/#start' },
           { text: 'MCP', link: '/#mcp' },
@@ -54,6 +55,7 @@ export default defineConfig({
       lang: 'en',
       link: '/en/',
       themeConfig: {
+        logo: '/favicon.svg',
         nav: [
           { text: 'Start', link: '/en/#start' },
           { text: 'MCP', link: '/en/#mcp' },
