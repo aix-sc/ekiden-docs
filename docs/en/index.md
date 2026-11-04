@@ -97,6 +97,6 @@ When the catalog has no exact match, the session is named from the structure the
 ## Your data {#privacy}
 
 - **Read only**: it never writes to your training records.
-- **No location data**: results passed to the AI contain no GPS coordinates.
+- **Where you ran stays private**: distances and paces come back, but the route itself (GPS coordinates) is never given to the AI, so your home and usual routes stay private.
 - **Local versions stay on your computer**: the MCP extension and the CLI read your FIT files on your own machine.
 - **No conversation**: v3 only returns numbers and judgments. The AI you connect writes the text.
